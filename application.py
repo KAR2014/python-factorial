@@ -1,19 +1,19 @@
 # -*- coding: utf-8 -*-
+""" Factorial """
 import time
-import os
 import sys
 
-""" Factorial """
 FACTORIAL = 0
 RESPUETA = 0
 def factorial(NUMERO):
     CONTADOR = 1
     while NUMERO > 0:
-       CONTADOR = CONTADOR*(NUMERO)
-       NUMERO = NUMERO - 1
+        CONTADOR = CONTADOR*(NUMERO)
+        NUMERO = NUMERO-1
     print "Factorial:"
     return CONTADOR
-print "¡Bienvenido a nuestro programa!\nLa función del mismo es calcular el Factorial de un número\n"    
+print u"                 ¡Bienvenido a nuestro programa!"
+print u"La función del mismo es calcular el Factorial de un número\n"
 while True:
     FACTORIAL = raw_input("Ingrese Número: ")
     try:
@@ -39,4 +39,4 @@ if RESPUESTA > 0:
     print u"                                   Kevin Herrera\n"
     print u"                          KAR_KO,INDUSTRIS Copyright ®"
     time.sleep(3)
-    sys.exit(2)   
+    sys.exit(2)
